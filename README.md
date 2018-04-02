@@ -1,4 +1,5 @@
 # Coco-Auth
+- [![Build Status](https://travis-ci.org/Team-Coper/Coco-Auth.svg?branch=master)](https://travis-ci.org/Team-Coper/Coco-Auth)
 
 ## Spec
 - Spring-security
