@@ -1,0 +1,7 @@
+language: java
+java:
+  - "1.8"
+script:
+
+notifications:
+  email: kyoje11@gmail.com
