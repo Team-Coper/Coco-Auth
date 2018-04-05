@@ -1,0 +1,6 @@
+language: java
+
+notifications:
+  email:
+    - kyoje11@gmail.com
+    - gmlwjd9405@gmail.com

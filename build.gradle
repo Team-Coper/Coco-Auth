@@ -1,13 +1,13 @@
 buildscript {
-	ext {
-		springBootVersion = '1.5.10.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    ext {
+        springBootVersion = '1.5.10.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
 apply plugin: 'java'
@@ -20,7 +20,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 
@@ -34,4 +34,6 @@ dependencies {
 	testCompile('org.springframework.security:spring-security-test')
 	testCompile('org.spockframework:spock-core:1.1-groovy-2.4')
 	testCompile('org.spockframework:spock-spring:1.1-groovy-2.4')
+
+	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 }
