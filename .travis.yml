@@ -2,20 +2,25 @@ language: java
 jdk:
   - openjdk8
 
+branches:
+  only:
+    - master
+
 # Travis CI 서버의 Cache 활성화
 cache:
     directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
+      - '$HOME/.m2/repository'
+      - '$HOME/.gradle'
 
 # clean 후 Build (Build시 자동으로 test 수행)
 script: "./gradlew clean build"
 
+# Build 성공 후 해야 할 Script
 after_success:
-  - ./gradlew jacocoTestReport coveralls
+- ./gradlew jacocoTestReport coveralls
 
 
-# 빌드 성공 / 실패 여부 Notification
+# 빌드 실패 Notification
 notifications:
   email:
     - kyoje11@gmail.com
