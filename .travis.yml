@@ -11,6 +11,10 @@ cache:
 # clean 후 Build (Build시 자동으로 test 수행)
 script: "./gradlew clean build"
 
+after_success:
+  - ./gradlew jacocoTestReport coveralls
+
+
 # 빌드 성공 / 실패 여부 Notification
 notifications:
   email:
