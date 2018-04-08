@@ -17,7 +17,7 @@ script: "./gradlew clean build"
 
 # Build 성공 후 해야 할 Script
 after_success:
-- ./gradlew jacocoTestReport coveralls
+- ./gradlew cobertura coveralls
 
 
 # 빌드 실패 Notification
